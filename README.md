@@ -3,10 +3,24 @@
 
 ***
 
+＃UPDATE:
+	MODIFIED BY:VEGE ZIYANG
+	DATE:20151006
 
+*0xcd 0xf2 万*
+
+已处理万元情况
+
+未处理大写数字情况
+
+***
 
 # UPDATE：
-- 未处理万元情况!
+	MODIFIED BY:VEGE ZIYANG
+	DATE:20151006
+
+~~未处理万元情况!~~
+
 
 ***
 

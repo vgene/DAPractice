@@ -2,6 +2,9 @@
 #include <fstream>
 #include <string>
 #include <stack>
+#include <sstream>
+#include <cstdlib>
+#include <iomanip>
 using namespace std;
 
 ifstream trainData;
@@ -69,7 +72,7 @@ unsigned long findYuan(){
 //find the number before "yuan"
 string getPrevNum(){
     while (!tmp.empty()) tmp.pop();
-    unsigned long pos=characterOffset;
+    long pos=characterOffset;
     while (pos-->0 && (strLine[pos]>'9'|| strLine[pos]<'0'));
     
     char now=strLine[pos];
@@ -91,6 +94,17 @@ string getPrevNum(){
     {
         tmpStr+=tmp.top();
         tmp.pop();
+    }
+    
+    //wan yuan
+    if (tmpStr.length()>0 && strLine[characterOffset-1]==char(0xf2) && strLine[characterOffset-2]==char(0xcd))
+    {
+        double tempDouble;
+        stringstream ss(tmpStr),ss2;
+        ss>>tempDouble;
+        tempDouble*=10000;
+        ss2<<(unsigned long)tempDouble;
+        return ss2.str();
     }
     return tmpStr;
 }
