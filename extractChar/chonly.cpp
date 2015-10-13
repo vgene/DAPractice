@@ -5,9 +5,9 @@
 #include<string>
 #include<map>
 using namespace std;
-const int BANLIST_MAX_LENGTH=10;
+#define BANLIST_MAXLEN 10 
 char temp[3]={};
-char banlist[BANLIST_MAX_LENGTH+1][3]={"¡¶","¡·","£¨","£©","¡¢","£¬","£»","£º","¡£","µÄ"};
+char banlist[BANLIST_MAXLEN+2][3]={"¡¶","¡·","£¨","£©","¡¢","£¬","£»","£º","¡£","µÄ"};
 char buffer[3000]={};
 int cnt=0;
 bool lastflag=true;
@@ -34,7 +34,7 @@ int main()
 			}
 			temp[0]=c;temp[1]=buffer[++i];
 			bool flag=true;
-			for(int j=0;j<BANLIST_MAX_LENGTH;j++)
+			for(int j=0;j<BANLIST_MAXLEN;j++)
 			{
 				if(!strcmp(temp,banlist[j]))
 				{

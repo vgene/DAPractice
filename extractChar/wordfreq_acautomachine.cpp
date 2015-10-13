@@ -5,7 +5,7 @@
 #include<algorithm>
 #include<queue>
 #define maxlen 12
-#define thr 50
+#define thr 75
 using namespace std;
 typedef pair <string,int> pp;
 struct node
