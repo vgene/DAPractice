@@ -5,10 +5,11 @@
 	MODIFIED BY:Ultimanecat
 	DATE:20151013
 	
-	chonly: change data.csv into chonly.txt, which only contains chinese characters, except some marks. Exceptions are set at BANLIST.
-	wordfreq: count all word frequency in chonly.txt . Will cost some time. output:wordfreq.txt. Note that threshold value of output at #define thr
-	wordfreq_acautomachine: Make things clear. input:wordfreq.txt, output: wordfreq_acautomachine.txt. Note that threshold value of insertion at #define thr
-	charfreq: doesn't make any sense so far. May be very useful from now on :D. input:chonly.txt
+github desktop is rubbish.	
+chonly: change data.csv into chonly.txt, which only contains chinese characters, except some marks. Exceptions are set at BANLIST.
+wordfreq: count all word frequency in chonly.txt . Will cost some time. output:wordfreq.txt. Note that threshold value of output at #define thr
+wordfreq_acautomachine: Make things clear. input:wordfreq.txt, output: wordfreq_acautomachine.txt. Note that threshold value of insertion at #define thr
+charfreq: doesn't make any sense so far. May be very useful from now on :D. input:chonly.txt
 ***
 
 
