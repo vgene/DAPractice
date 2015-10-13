@@ -2,6 +2,14 @@
 数算大作业－判决文书中的金额项提取
 
 ***
+	MODIFIED BY:VEGE ZIYANG
+	DATE:20151008
+
+1) S | “元”不是数字；BUG；大写汉字
+2) T | 按数字分隔模型；按字符数量分隔模型；按行分隔模型
+3) S<-->T | 之后讨论
+
+***
 
 ＃UPDATE:
 	MODIFIED BY:VEGE ZIYANG
