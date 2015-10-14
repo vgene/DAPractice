@@ -13,6 +13,7 @@ ofstream outputData;
 string strLine;
 stack<char> tmp;
 int documentID;
+unsigned long lineTotal=0;
 unsigned long lineOffset=0;
 unsigned long characterOffset;
 
@@ -47,14 +48,11 @@ unsigned long readLine(){
     
     if (len>0)
         updateDocumentIDandLengthOffset();
-    
+    lineTotal++;
     return len;
 }
 
-int getOffset(){
-    
-    return 0;
-}
+
 
 //find yuan, if
 unsigned long findYuan(){
@@ -126,7 +124,7 @@ int main(int argc, char *argv[])
         {
             string prevNum=getPrevNum();
             if (prevNum.length()>0)
-            outputData<<documentID<<' '<<lineOffset<<' '<<characterOffset<<' '<<prevNum<<endl;
+            outputData<<lineTotal<<' '<<documentID<<' '<<lineOffset<<' '<<characterOffset<<' '<<prevNum<<endl;
             //cout<<documentID<<' '<<lineOffset<<' '<<characterOffset<<endl;
         }
         
