@@ -1,6 +1,17 @@
 # DAPractice
 数算大作业－判决文书中的金额项提取
 ***
+# UPDATE
+###  Beta 1.0
+	MODIFIED BY: VEGE ZIYANG
+	DATE:20151014
+	
+- Add naive match mode.
+
+Now words and numbers can match, but the matching method is rather stupid. Just find keywords in a line one by one, and match the nearest number.(with a maximum gap, now set at 40)
+
+
+***
 	NEED TO UPDATE
 		space, chinese characters
 ***
