@@ -1,5 +1,17 @@
 # DAPractice
 数算大作业－判决文书中的金额项提取
+
+***
+# UPDATE
+###
+	only record the nearest pair, for one specific number, only tie the nearest word with it.
+
+***
+# UPDATE
+### Fix multi '.' bug
+	MODIFIED BY: VEGE ZIYANG
+	DATE:20151217
+
 ***
 # UPDATE
 ###  Beta 1.0

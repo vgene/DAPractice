@@ -125,7 +125,8 @@ string matchNum(int wordPosStart, int wordPosEnd){
 
 	//std::cout<<numList[numListNow].line<<' '<<numList[numListNow].charos<<' '<<wordPosEnd<<endl;
 
-	if (numList[numListNow].line==lineTotal && numList[numListNow].charos-wordPosEnd<MAX_VERI_NUM){		std::cout<<numList[numListNow].line<<' '<<numList[numListNow].charos<<' '<<wordPosEnd<<endl;
+	if (numList[numListNow].line==lineTotal && numList[numListNow].charos-wordPosEnd<MAX_VERI_NUM){		
+		std::cout<<numList[numListNow].line<<' '<<numList[numListNow].charos<<' '<<wordPosEnd<<endl;
 		return numList[numListNow].number;
 	}
 	return "";

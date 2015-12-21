@@ -74,8 +74,16 @@ string getPrevNum(){
     while (pos-->0 && (strLine[pos]>'9'|| strLine[pos]<'0'));
     
     char now=strLine[pos];
+    bool isFloat = false;
     while ((now>='0'&&now<='9')||now==','||now==(char)0xac ||now=='.')
     {
+        if (now == '.'){
+            if (isFloat)
+                now = ',';
+            else
+                isFloat = true;
+        }
+
         // if comma
         if (now==(char)0xac)
         {
@@ -84,6 +92,8 @@ string getPrevNum(){
         }
         if ((now>='0'&&now<='9')||now=='.')
             tmp.push(now);
+
+
         now=strLine[--pos];
     }
     
